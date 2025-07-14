@@ -47,10 +47,10 @@ function ImageUpload() {
 
     try {
       //const res = await axios.post("http://localhost:4000/compress", formData);
-      const res = await axios.post(`${process.env.REACT_APP_API_URL}/compress`, formData);
+      //const res = await axios.post(`${process.env.REACT_APP_API_URL}/compress`, formData);
 
-      //const res =await axios.post("http://10.148.153.198:4000/compress", formData);
-
+      const res =await axios.post("https://dctcompression-production.up.railway.app/compress", formData);
+      
       const url = res.data.lossy_url;
       setCompressedUrl(url);
 
