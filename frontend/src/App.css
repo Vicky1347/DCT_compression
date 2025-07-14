@@ -1,0 +1,25 @@
+/* App.css */
+
+.App {
+    overflow-x: hidden;
+  }
+  
+  .section {
+    padding: 30px ;
+  }
+  
+  .section-upload {
+    padding-bottom: 200px ;
+    background-color: #fff4ed;
+    min-height: 100vh;
+  }
+  
+  .section-info {
+    background-color: #ffffff;
+  }
+  
+  .section-footer {
+    background-color: #3c1e1e;
+    color: white;
+  }
+  
