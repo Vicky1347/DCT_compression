@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 4000;
 const BASE_URL = process.env.BASE_URL || `http://localhost:${PORT}`;
 
 // Enable CORS for frontend (default allows all)
+app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 // File upload destination
